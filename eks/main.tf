@@ -1,5 +1,5 @@
 resource "aws_eks_cluster" "irdeto-eks" {
-  name     = "opd-k8s-live-v2"
+  name     = "k8s-v2"
   role_arn = aws_iam_role.eks-iam-role.arn
 
   vpc_config {
@@ -18,7 +18,7 @@ resource "aws_eks_cluster" "irdeto-eks" {
 
 
 resource "aws_iam_role" "eks-iam-role" {
-  name = "irdeto-eks-iam-role"
+  name = "eks-iam-role"
 
   path = "/"
 
